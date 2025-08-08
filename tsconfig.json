@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+
+    "types": ["vitest/globals"],
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "**/*.stories.tsx",
+    "**/*.md",
+    "**/*.mdx",
+    "node_modules",
+    "dist",
+    "vite.config.ts",
+    "vitest.setup.ts"
+  ]
+}
